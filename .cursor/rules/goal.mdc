@@ -1,0 +1,25 @@
+---
+description: Project goal
+globs:
+---
+
+# Project goal
+
+- Create the ruby gems that efficiently extracts and processes data from a CSV file based on a query
+
+# Detail
+- Implement a method, e.g., query_csv(file_path, query_hash), where:
+  - `file_path` is a string representing the path to the CSV file.
+  - `query_hash` is a hash with column headers as keys and criteria as values.
+- CSV structure: [100_data.csv](mdc:data/100_data.csv)
+- Query Functionality:
+  - The method should parse the CSV file and return an array of hashes representing rows that match all conditions in the query_hash.
+  - Return an empty array if no rows match.
+- Example Usage:
+```ruby
+require 'gem_name'
+results = GemName.query_csv('path/to/file.csv', { 'Name' => 'John', 'Age' => '30' })
+```
+- Error Handling: Handle errors such as file not found or incorrect query format with meaningful messages.
+- Documentation: Include a README with installation instructions, usage examples, and dependencies.
+- Performance: Handle large file
